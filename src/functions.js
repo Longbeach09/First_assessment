@@ -2,7 +2,9 @@
 // Ex.:
 //   divide(10, 2);
 //   => 5
-function divide(x, y) {}
+function divide(x, y) {
+  return x / y
+}
 
 // Return the average of x and y.
 // Here, the average of x and y is the *mean* of x and y. In other words, it's
@@ -10,14 +12,18 @@ function divide(x, y) {}
 // Ex.:
 //   average(10, 2);
 //   => 6
-function average(x, y) {}
+function average(x, y) {
+  return (x + y) / 2
+}
 
 // Return true if x and y are mostly equivalent up to a tolerance of 0.001.
 // In other words, return true if the aboslute value of x - y is less than 0.001.
 // Ex.:
 //   approximatelyEqual(10.001, 10);
 //   => true
-function approximatelyEqual(x, y) {}
+function approximatelyEqual(x, y) {
+  return true( x - y < 0.001)
+}
 
 // Given a first name and last name, return a full name in the format "FIRST LAST"
 // Ex.:

@@ -3,9 +3,9 @@
 //   greaterThanTen([1, 2, 3, 11, 12, 13]);
 //   => [11, 12, 13]
 function greaterThanTen(numbers) {
-  let highNumbers = [1,2,10,15]
+  let highNumbers = []
 }
-for (const number of numbers){
+for (let number of numbers){
   if (number > 10) {
     highNumbers.push(number)
   }
@@ -13,12 +13,14 @@ for (const number of numbers){
   return highNumbers
 }
 
-console.log(highNumbers)
 // Given an array of strings, return all words that start with 'b' or 'B'.
 // Ex.:
 //   bWords(['banana', 'orange', 'apple', 'Bonobo', 'kiwi', 'pear']);
 //   => ['banana', 'Bonobo]
-function bWords(words) {}
+function bWords(words) {
+
+
+}
 
 // Add all the elements from additionalItems to the end of originalArray.
 // Return the originalArray..
