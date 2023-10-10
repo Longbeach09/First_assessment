@@ -30,7 +30,7 @@ function bWords(words) {
 
   return wordsWithB;
 }
-// console.log(bWords(['banana','orange','apple','Bonobo']))
+// console.log(bWords(["banana", "orange", "apple", "Bonobo"]));
 
 // Add all the elements from additionalItems to the end of originalArray.
 // Return the originalArray..
@@ -104,18 +104,18 @@ function smallestNItems(items, n) {
   const sortedItems = [...items];
 
   // Sort the array in descending order
-  // for (let i = 0; i < sortedItems.length; i++) {
-  //   for (let j = i + 1; j < sortedItems.length; j++) {
-  //     if (sortedItems[i] < sortedItems[j]) {
-  //       const temp = sortedItems[i];
-  //       sortedItems[i] = sortedItems[j];
-  //       sortedItems[j] = temp;
-  //     }
-  //   }
-  //  }
+  for (let i = 0; i < sortedItems.length; i++) {
+    for (let j = i + 1; j < sortedItems.length; j++) {
+      if (sortedItems[i] < sortedItems[j]) {
+        const temp = sortedItems[i];
+        sortedItems[i] = sortedItems[j];
+        sortedItems[j] = temp;
+      }
+    }
+  }
 
   //   // Return n number of smallest items from the sorted array
-  //   return sortedItems.slice(sort edItems.length - n);
+  return sortedItems.slice(sortedItems.length - n);
 }
 
 // Search for a value in the array and return its index. If the value appears

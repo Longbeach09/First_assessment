@@ -71,11 +71,11 @@ function censorVowels(string) {
 //   stickyCase('hello world');
 //   => 'hElLo wOrLd'
 function stickyCase(string) {
-  // const split = string.split("");
-  // for (let i = 0; i < split.length; i += 1) {
-  //   if (i % 2 === 1) split[i] = split[i].toUpperCase();
-  // }
-  // return split.join("");
+  const split = string.split("");
+  for (let i = 0; i < split.length; i += 1) {
+    if (i % 2 === 1) split[i] = split[i].toUpperCase();
+  }
+  return split.join("");
 }
 
 // Return the given string in leetspeak. Leetspeak is a modified version of
@@ -100,16 +100,16 @@ const leetSpeakMap = {
 };
 
 function leetspeak(string) {
-  // const split = string.split(""); // split the string input into an array
-  // const charactersToSwap = Object.keys(leetSpeakMap); // get the keys from `leetSpeakMap` as an array, IE: ['a', 'e', 'i', 'o', 's', 't']
-  // for (let i = 0; i < split.length; i += 1) {
-  //   // loop over split string array
-  //   if (charactersToSwap.includes(split[i])) {
-  //     // check if the current character in the split string array is included in the leetSpeakMap keys array (charactersToSwap)
-  //     split[i] = leetSpeakMap[split[i]]; // If theres a match, then assign that character to its equivilant mapped "leet speak" character from `leetSpeakMap`
-  //   }
-  // }
-  // return split.join(""); // Return the array as a string after joining it back into string form
+  const split = string.split(""); // split the string input into an array
+  const charactersToSwap = Object.keys(leetSpeakMap); // get the keys from `leetSpeakMap` as an array, IE: ['a', 'e', 'i', 'o', 's', 't']
+  for (let i = 0; i < split.length; i += 1) {
+    // loop over split string array
+    if (charactersToSwap.includes(split[i])) {
+      // check if the current character in the split string array is included in the leetSpeakMap keys array (charactersToSwap)
+      split[i] = leetSpeakMap[split[i]]; // If theres a match, then assign that character to its equivilant mapped "leet speak" character from `leetSpeakMap`
+    }
+  }
+  return split.join(""); // Return the array as a string after joining it back into string form
 }
 
 export {
