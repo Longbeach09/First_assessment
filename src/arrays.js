@@ -7,7 +7,9 @@ function greaterThanTen(numbers) {
 
   for (let number of numbers) {
     //aying let the numbers in the numbers array
-    if (number > 10) bigNum.push(number); //continuing line 8  its saying if the number us bigger 10 push the number into a
+    if (number > 10) {
+      bigNum.push(number);
+    } //continuing line 8  its saying if the number us bigger 10 push the number into a
     //vairiable called bigNum
   }
 
@@ -73,7 +75,7 @@ function everyOtherItem(items) {
   const temp = []; // setting a array and naming it temp
   for (let i = 0; i < items.length; i += 1) {
     //same thing going trough untill it reaches the end
-    if (i % 2 === 0) temp.push(items[i]); //this is saying every other letter push into a array(had to google the "i % 2")
+    if (i % 2 === 0) temp.push(items[i]); //this is saying every other letter push into a array
   }
   return temp; // return the
 }
